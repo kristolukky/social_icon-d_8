@@ -1,0 +1,7 @@
+<div class="social_icons">
+{% for icon in icons %}
+    <a href="{{ icon.url }}" target="_blank" title="{{ icon.title }}" class="social_icon">
+        {{ icon.icon }}
+    </a>
+{% endfor %}
+</div>

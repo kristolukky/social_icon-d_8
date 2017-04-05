@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @ingroup social_icon
+ */
+function social_icon_schema()
+{
+    $schema['social_icon'] = array(
+        'description' => t('Table for social icon module'),
+        'fields'      => array(
+            'id'         => array('type' => 'serial',  'size'=>'normal',  'not null' => TRUE, 'unsigned' => TRUE, 'description' => t('Primary key')),
+            'title'       => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE,  'description' => t('Title')),
+            'url'        => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE,  'description' => t('Link')),
+            'icon'       => array('type' => 'int', 'length' => 8, /*'not null' => TRUE, */ 'description' => t('Icon')),
+            'hover_icon' => array('type' => 'int', 'length' => 8, /*'not null' => TRUE,*/ 'description' => t('Hover icon')),
+        ),
+        'indexes' => array(
+            'title' => array('title')
+        ),
+        'primary key' => array('id')
+    );
+
+    return $schema;
+}
+
+

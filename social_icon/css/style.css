@@ -1,0 +1,9 @@
+.hover_social_icon{
+    display:none;
+}
+
+a.social_icon img.img-responsive{
+     display: inline-block;
+     max-width: 100px;
+     max-height: 100px;
+}

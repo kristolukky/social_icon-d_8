@@ -1,0 +1,10 @@
+name: 'Social icon'
+type: module
+description: 'Social icon module'
+package: Social icon
+core: 8.x
+dependencies:
+  - field
+  - text
+  - block
+

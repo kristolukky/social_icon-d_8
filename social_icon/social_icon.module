@@ -1,0 +1,30 @@
+<?php
+
+//function social_icon_theme() {
+//    return array(
+//        'social_icon_block' => array(
+//            'variables' => array(
+//                'icons' => array(),
+//                'width' => NULL,
+//                'height' => NULL,
+//                'position' => NULL,
+//            ),
+//            'template' => 'social-icon-block',
+//        ),
+//    );
+//}
+
+function social_icon_theme($existing, $type, $theme, $path) {
+    return array(
+        'social_icon' => array(
+            'variables' => array(
+                'icons' => [],
+                'width' => NULL,
+                'height' => NULL,
+                'position' => NULL,
+            ),
+            'template' => 'social-icon',
+        ),
+
+    );
+}

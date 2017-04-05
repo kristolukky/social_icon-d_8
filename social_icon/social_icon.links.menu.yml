@@ -1,0 +1,19 @@
+social_icon.admin_settings:
+  title: 'Social icon settings'
+  route_name: social_icon.admin_settings
+  parent: system.admin_config_development
+social_icon.admin_settings_list:
+  title: 'Social icon list'
+  menu_name: list
+  route_name: social_icon.admin_settings
+social_icon.admin_settings_add:
+  title: 'Add entry'
+  route_name: social_icon.admin_settings
+  menu_name: add
+social_icon.admin_settings_update:
+  title: 'Update entry'
+  route_name: social_icon.admin_settings
+  menu_name: update
+
+
+

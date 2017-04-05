@@ -1,0 +1,44 @@
+social_icon.admin_settings:
+  path: '/admin/config/development/social_icon'
+  defaults:
+    _title: 'Social Icons Setting'
+    _controller: '\Drupal\social_icon\Controller\SocialIconController::entryList'
+  requirements:
+    _permission: 'administer site configuration'
+
+social_icon.social_icon_list:
+  path: '/admin/config/development/social_icon/list'
+  defaults:
+    _title: 'Social Icon List'
+    _controller: '\Drupal\social_icon\Controller\SocialIconController::entryList'
+  requirements:
+    _permission: 'administer site configuration'
+    _module_dependencies: 'toolbar'
+
+social_icon.social_icon_add:
+  path: '/admin/config/development/social_icon/add'
+  defaults:
+    _title: 'Add Social Icon'
+    _form: '\Drupal\social_icon\Form\SocialIconAddForm'
+  requirements:
+    _permission: 'administer site configuration'
+    _module_dependencies: 'toolbar'
+
+social_icon.social_icon_update:
+  path: '/admin/config/development/social_icon/update/{id}'
+  defaults:
+    _title: 'Update Entry'
+    _form: '\Drupal\social_icon\Form\SocialIconUpdateForm'
+  requirements:
+    _permission: 'administer site configuration'
+    _module_dependencies: 'toolbar'
+
+social_icon.social_icon_delete:
+  path: '/admin/config/development/social_icon/delete/{id}'
+  defaults:
+    _title: 'Delete Entry'
+    _form: '\Drupal\social_icon\Form\SocialIconDeleteForm'
+  requirements:
+    _permission: 'administer site configuration'
+    _module_dependencies: 'toolbar'
+
